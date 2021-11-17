@@ -24,6 +24,11 @@ body{
     float: left;
 }
 
+.right{
+    float: right;
+    min-width: auto;
+}
+
 h4{
     color: white;
     margin-bottom: 10px;
@@ -149,10 +154,28 @@ header{
     z-index: 1001;
 }
 
+.upgrade{
+    height: 50px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 50px 20px 50px 0;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+}
+
 nav{
     margin-top: 150px;
     min-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
 }
+
+/* nav > a :not() {
+
+} */
 
 footer{
     position: fixed;

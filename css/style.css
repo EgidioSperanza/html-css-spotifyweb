@@ -1,124 +1,163 @@
-/* ----RESET---- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-aside ul{
+ul{
     list-style: none;
 }
-/* ----UTILITY---- */
+
 body{
+    color: gray;
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .left{
     float: left;
 }
 
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
+h4{
+    color: white;
+    margin-bottom: 10px;
 }
 
 .wrapper{
     width: 100%;
     height: 100vh;
-}
-/* ----SIDEBAR---- */
-aside{
-    float:left;
-    width: 250px;
-    height:calc(100vh - 150px);
-    padding: 0 20px;
-    background-color: black;
-    position: relative;
-    color: gray;
-}
-/* ----LOGO---- */
-aside > .row  > .logo{
-    width: 100%;
-    min-height: 150px;
-    line-height: 150px;
-    z-index: 3;
-}
-
-aside > .row  > .logoaside > .row  > .logo img{
-    width: 90%;
-}
-/* ----SIDEBAR NAVIGATION---- */
-aside > .row > .btn-nav{
-    width: 100%;
-    min-height: 100px;
-    z-index: 2;
-}
-
-aside > .row  > .playlist{
-    width: 100%;
-    max-height: 200px;
-    background-color: yellow;
-    overflow: auto;
-}
-
-aside > .flex-row{
-    width: 100%;
-    height: 100%;  
-    display: flex;
-    flex-direction: column;
-}
-
-aside > .row.flex-row > .sidebar-bottom{
-    position: relative;
-    flex:1;
-    background-color: green;
-}
-
-aside > .row.flex-row > .sidebar-bottom > .user{
-    position: absolute;
-    bottom:0;
-    width: 100%;
-    height: 100px;
-    background-color: blueviolet;
-    z-index: 1;
+    overflow: hidden;
 }
 
 .container{
-    float: right;
-    width: calc(100% - 250px);
-    position: relative;
+    width: 100%;
+    height: calc(100% - 150px);
+}
+
+.sidebar{
+    width: 250px;
+    height: calc(100vh - 150px);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+}
+
+.top-sidebar{
+    height: calc(100% - 320px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 250px;
+    min-height: 150px;
+}
+
+.logo img.default{
+    width: 80%;
+}
+
+.logo img.small{
+    display: none;
+}
+
+.navigation a{
+    line-height: 30px;
+    height: 30px;
+}
+.navigation a.icon::before{
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    margin-right:5px ;
+}
+
+.navigation a.home::before{
+    background-image: url('../img/home.svg');
+}
+
+.navigation a.search::before{
+    background-image: url('../img/search.svg');
+}
+
+.navigation a.library::before{
+    background-image: url('../img/libreria.svg');
+}
+
+.playlist{
+    min-height: auto;
     overflow: auto;
-    background-color:#141922 ;
+}
+
+.playlist h4{
+    text-transform: uppercase;
+}
+
+.add{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-size: 60px;
+    margin-right: 10px;
+}
+
+ .add-text{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+}
+
+.playlist li{
+    margin-top: 10px;
+}
+
+.user{
+    min-height: 80px;
+}
+
+.container-main{
+    width: calc(100% - 250px);
+    height: 100%;
+    min-height: 150px;
+    overflow: auto;
+    background-color: #141922;
+    position: relative;
 }
 
 header{
     position: absolute;
-    width: 100%;
+    top:0;
+    right:0;
+    width: calc(100vw - 250px);
     height: 150px;
-    background-color: wheat;
-    z-index:1001;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
 }
 
 nav{
     margin-top: 150px;
-    width: 100%;
-    height: 50px;
-}
-
-main{
-    width: 100%;
-    height: calc(100vh - 350px);
-    color:white;
+    min-height: 50px;
 }
 
 footer{
     position: fixed;
-    bottom:0;
     width: 100%;
-    height: 150px;
-    background-color: blue;
-    z-index: 101;
+    min-height:150px;
+    background-color: orange;
+    bottom: 0;
 }
-/* ----ICON---- */
-.home::before{}

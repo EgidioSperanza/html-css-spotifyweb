@@ -33,14 +33,16 @@ aside{
 
 aside > .row  > .logo{
     width: 100%;
-    height: 150px;
+    min-height: 150px;
     background-color: black;
+    z-index: 3;
 }
 
 aside > .row > .btn-nav{
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     background-color: aliceblue;
+    z-index: 2;
 }
 
 aside > .row  > .playlist{
@@ -69,6 +71,7 @@ aside > .row.flex-row > .sidebar-bottom > .user{
     width: 100%;
     height: 100px;
     background-color: blueviolet;
+    z-index: 1;
 }
 
 .container{

@@ -3,3 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    height:calc(100vh -150px);
+    display: flex;
+}
+
+aside{
+    width: 200px;
+    height: auto;
+    background-color: brown;
+    overflow:hidden;
+}
+
+.logo{
+    width: 100%;
+    height: 150px;
+    background-color: violet;
+}
+
+.corpse{
+    width: calc(100% - 200px);
+    overflow: auto;
+    margin: 150px 0;
+    background-color: wheat;
+}
+
+header{
+    position: absolute;
+    top:0;
+    width: calc(100% - 200px);
+    height: 150px;    
+    background-color: cadetblue;
+    z-index: 1001;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: steelblue;
+}
+
+footer{
+    position: fixed;
+    top: calc(100vh - 150px);
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+    z-index: 1000;
+}

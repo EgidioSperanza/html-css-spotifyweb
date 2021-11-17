@@ -8,8 +8,8 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.row{
-    width: 100%;
+.left{
+    float: left;
 }
 
 .row::after{
@@ -28,54 +28,47 @@ aside{
     width: 200px;
     height:calc(100vh - 150px);
     background-color: aqua;
-}
-
-aside > .flex-row{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-aside > .flex-row > .top-nav{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
-}
-
-aside > .flex-row > .btm-nav{
-    width: 100%;
-    height: 100px;
-    background-color: green;
     position: relative;
 }
 
-aside > .flex-row > .btm-nav > .user{
-    position: absolute;
+aside > .row  > .logo{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+aside > .row > .btn-nav{
     width: 100%;
     height: 100px;
-    bottom:0;
-    background-color: bisque;
+    background-color: aliceblue;
 }
 
-aside > .flex-row >.top-nav >.logo{
+aside > .row  > .playlist{
     width: 100%;
-    height: 150px;
-    background-color: aquamarine;
-}
-
-aside > .flex-row  > .top-nav  > .btn-nav{
-    width: 100%;
-    height: 150px;
-    background-color: coral;
-}
-
-aside > .flex-row  > .top-nav  > .playlist{
-    width: 100%;
-    flex:1;
+    max-height: 200px;
+    background-color: yellow;
     overflow: auto;
-    background-color: violet;
+}
+
+aside > .flex-row{
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+}
+
+aside > .row.flex-row > .sidebar-bottom{
+    position: relative;
+    flex:1;
+    background-color: green;
+}
+
+aside > .row.flex-row > .sidebar-bottom > .user{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
 }
 
 .container{

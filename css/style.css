@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row{
+    width: 100%;
+}
+
 .row::after{
     content: "";
     display: table;
@@ -13,77 +21,96 @@
 .wrapper{
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.container{
-    width: 100%;
-    height:calc(100vh -150px);
-    display: flex;
 }
 
 aside{
+    float:left;
     width: 200px;
-    height: calc(100vh - 150px);
-    background-color: brown;
-    overflow:none;
+    height:calc(100vh - 150px);
+    background-color: aqua;
+}
+
+aside > .flex-row{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside > .flex-row > .top-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+aside > .flex-row > .btm-nav{
+    width: 100%;
+    height: 100px;
+    background-color: green;
     position: relative;
 }
 
-.logo{
+aside > .flex-row > .btm-nav > .user{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom:0;
+    background-color: bisque;
+}
+
+aside > .flex-row >.top-nav >.logo{
     width: 100%;
     height: 150px;
+    background-color: aquamarine;
+}
+
+aside > .flex-row  > .top-nav  > .btn-nav{
+    width: 100%;
+    height: 150px;
+    background-color: coral;
+}
+
+aside > .flex-row  > .top-nav  > .playlist{
+    width: 100%;
+    flex:1;
+    overflow: auto;
     background-color: violet;
 }
 
-.navigation{
-    width: 100%;
-    height: 150px;
-    background-color: blue;
-}
-
-.playlist{
-    width: 100%;
-    height: 150px;
-    background-color: blueviolet;
-}
-
-.sidebar-bottom{
-    width: 100%;
-    height: 150px;
-    background-color: green;
-    position: absolute;
-    bottom: 0;
-    z-index: 100;
-}
-
-.corpse{
+.container{
+    float: right;
     width: calc(100% - 200px);
-    height: calc(100vh - 150px);
+    position: relative;
     overflow: auto;
-    background-color: wheat;
 }
 
 header{
-    position:relative;    
+    position: absolute;
     width: 100%;
-    height: 150px;    
-    background-color: cadetblue;
-    z-index: 1000;
+    height: 150px;
+    background-color: wheat;
+    z-index:1001;
 }
 
 nav{
+    margin-top: 150px;
     width: 100%;
     height: 50px;
-    background-color: steelblue;
+    background-color: black;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 350px);
+    background-color:salmon ;
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom:0;
     width: 100%;
     height: 150px;
-    background-color: gray;
-    z-index: 100;
+    background-color: blue;
+    z-index: 101;
 }

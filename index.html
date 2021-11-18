@@ -8,113 +8,141 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet"> 
+    <!-- ----FONT AWESOME---- -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- ----CSS---- -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="container row">
-                <div class="sidebar left">
-                    <div class="logo">
-                        <img class="default" src="./img/logo.svg" alt="Logo Spotify">
-                        <img class="small" src="./img/logo-small.svg" alt="Logo Spotify">
-                    </div>
-                    <div class="navigation">
-                        <ul>
-                            <li><a class="icon home" href="">Home</a></li>
-                            <li><a class="icon search" href="">Cerca</a></li>
-                            <li><a class="icon library" href="">La tua Libreria</a></li>
-                        </ul>
-                    </div>
-                    <div class="top-sidebar ">
-                        <div class="playlist">
-                            <h4>Playlist</h4>
-                            <div class="row">
-                                <div class="add left">+</div><div class="add-text left">Crea Playlist</div>
-                            </div>
-                            <ul>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                            </ul>
+    <!-- ----CONTAINER ASIDE & CORPSE---- -->
+    <div class="wrapper-top">
+        <!-- ----ASIDE & SIDEBAR---- -->
+        <aside>
+
+        </aside>
+        <!-- ----CONTAINER MAIN---- -->
+        <div class="container-main">
+            <!-- ----HEADER---- -->
+            <header>
+                <div class="upgrade">
+                    Effettua l'Upgrade
+                </div>
+            </header>
+            <!-- ----NAVBAR---- -->
+            <nav>
+                <a href="">In Evidenza</a>
+                <a href="">Podcast</a>
+                <a href="">Classifiche</a>
+                <a href="">Generi e Mood</a>
+                <a href="">Nuove Uscite</a>
+                <a href="">Scopri</a>
+            </nav>
+            <main>
+                <!-- ----SECTION RECENTLY PLAYED---- -->
+                <section id="recent">
+                    <h2>Recently played</h2>
+                    <div class="flex-row">
+                        <div class="box-song">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <h3>Heavy Metal</h3>
+                            <h6>Subtitle</h6>
+                        </div>
+                        <div class="box-song">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                        </div>
+                        <div class="box-song">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                        </div>
+                        <div class="box-song">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                        </div>
+                        <div class="box-song">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                        </div>
+                        <div class="box-song">
+                            <img src="./img/metal_lifting.jpg" alt="">
                         </div>
                     </div>
-                    <div class="user">
-                        installa app
-                        <hr />
-                        John Doe
-                    </div>
-                </div>
-                <div class="container-main left">
-                    <header>
-                        <div class="row">
-                            <div class="upgrade right">
-                                Effettua l'Upgrade
-                            </div>
+                </section>
+                <!-- ----SECTION ADVICE---- -->
+                <section id="advice">
+                    <h2>Recently played</h2>
+                    <div class="flex-row">
+                        <div class="box-song">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <h3>Heavy Metal</h3>
+                            <h6>Subtitle</h6>
                         </div>
-                    </header>
-                    <nav>
-                        <a href="">In Evidenza</a>
-                        <a href="">Podcast</a>
-                        <a href="">Classifiche</a>
-                        <a href="">Generi e Mood</a>
-                        <a href="">Nuove Uscite</a>
-                        <a href="">Scopri</a>
-                    </nav>
-                    <main>
-                        <section id="recent">
-                            <h2>Recently played</h2>
-                            <div class="flex-row">
-                                <div class="box-song">
-                                    <img src="./img/metal_lifting.jpg" alt="">
-                                    <h3>Heavy Metal</h3>
-                                    <h6>Subtitle</h6>
-                                </div>
-                                <div class="box-song">
-                                    <img src="./img/metal_lifting.jpg" alt="">
-                                </div>
-                                <div class="box-song">
-                                    <img src="./img/metal_lifting.jpg" alt="">
-                                </div>
-                                <div class="box-song">
-                                    <img src="./img/metal_lifting.jpg" alt="">
-                                </div>
-                                <div class="box-song">
-                                    <img src="./img/metal_lifting.jpg" alt="">
-                                </div>
-                                <div class="box-song">
-                                    <img src="./img/metal_lifting.jpg" alt="">
-                                </div>
-                            </div>
-                        </section>
-                        <section id="advice">
-                            <h2>Recently played</h2>
-                            <div class="box-song">
-                                <img src="./img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <h6>Subtitle</h6>
-                            </div>
-                        </section>
-                        <section id="rank">
-                            <h2>Recently played</h2>
-                            <div class="box-song">
-                                <img src="./img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <h6>Subtitle</h6>
-                            </div>
-                        </section>
-                    </main>
-                </div>
+                        <div class="box-song">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <h3>Heavy Metal</h3>
+                            <h6>Subtitle</h6>
+                        </div>
+                    </div>
+                </section>
+                <!-- ----SECTION RANK---- -->
+                <section id="rank">
+                    <h2>Recently played</h2>
+                    <div class="flex-row">
+                        <div class="box-song">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <h3>Heavy Metal</h3>
+                            <h6>Subtitle</h6>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
         </div>
-        <footer>
-
-
-        </footer>
     </div>
+    <!-- ----FOOTER PANEL CONTROL---- -->
+    <footer>
+        <!-- ----LEFT PANEL---- -->
+        <div class="panel-lt">
+            <div class="cover">
+                <img src="./img/sinister.jpeg" alt="Song's Cover Image">
+                <div class="song-name">
+                    Sinister <br>
+                    Brano Nome
+                </div>
+                <div class="document">
+                    <i class="far fa-folder"></i>
+                </div>
+                <div class="like">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ----CENTRAL PANEL---- -->
+        <div class="panel-ct">
+            <div class="song-cmd">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="song-bar">
+                <span>0:25</span>
+                <div class="range">
+                    <div class="range-value"></div>
+                </div>
+                <span>4:35</span>
+            </div>
+        </div>
+        <!-- ----RIGHT PANEL---- -->
+        <div class="panel-rt">
+            <div class="app-cmd">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <div class="range">
+                    <div class="range-value"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

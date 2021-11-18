@@ -29,8 +29,19 @@ body{
     min-width: auto;
 }
 
-h2, h4{
+h2, h3, h4{
     color: white;
+}
+
+h2{
+    margin-bottom: 40px;
+}
+
+h4{
+    margin-bottom: 20px;
+}
+
+h3{
     margin-bottom: 10px;
 }
 
@@ -178,8 +189,9 @@ nav > a:not(nav > a:last-child) {
 }
 
 section{
-    padding:20px;
+    padding:50px 20px;
 }
+
 footer{
     position: fixed;
     width: 100%;
@@ -187,3 +199,26 @@ footer{
     background-color: orange;
     bottom: 0;
 }
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+section > .box-song{
+    text-align: center;
+}
+
+.box-song{
+    width: calc((100% - 40px) / 6 );
+}
+
+.box-song img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#rank > .box-song > img{
+    border-radius: 100%;
+}
+

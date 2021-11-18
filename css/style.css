@@ -41,15 +41,15 @@ aside{
     max-height: 100%;
     background-color: #000000;
     padding-left: 20px;
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
 }
 
 .sidebar-top{
     height: calc(100% - 80px);
+    min-height: 450px;
     display: flex;
     flex-direction: column;
+
 }
 /* ----LOGO---- */
 .logo{
@@ -115,6 +115,7 @@ aside{
 }
 
 .playlist{
+    min-height: 80px;
     overflow-y: auto;
 }
 
@@ -123,8 +124,8 @@ aside{
 }
 
 .sidebar-user{
-    height: 80px;
-    background-color: red;
+    height: 100%;
+
 }
 /* ----CONTAINER MAIN---- */
 .container-main{

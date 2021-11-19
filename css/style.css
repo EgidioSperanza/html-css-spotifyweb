@@ -269,7 +269,6 @@ section{
     margin-bottom: 20px;
 }
 
-
 .box-img:hover .play{
     display: block;
 }
@@ -448,7 +447,7 @@ footer{
 
 @media only screen and (max-width: 768px){
     body{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .box-song{

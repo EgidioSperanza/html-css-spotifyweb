@@ -332,9 +332,11 @@ footer{
 .cover a:hover{
     text-decoration: underline;
 }
-.song-name, .document, .like{
+
+.song-name{
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
 }
 
 .action-song{
@@ -500,4 +502,42 @@ footer{
     header{
         width: calc(100% - 50px);
     }
+
+    .cover img{
+        height: 40%;
+        object-fit: cover;
+    }
+
+    .song-cmd i:not(.fa-play-circle){
+        font-size: 15px;
+        margin:2px
+    }
+    
+    .song-cmd i.fa-play-circle{
+        font-size: 25px;
+        margin: 5px;
+    }
+    
+    .song-cmd, .song-bar{
+        width: 100%;
+    }
+
+    .cover img{
+        height: 40%;
+    }
+
+    .song-name{
+        padding-right: 10px;
+    }
+
+    .app-cmd > i{
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    
+    .range{
+        width: 100%;
+        margin: 0 5px;
+    }
+    
 }

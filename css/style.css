@@ -70,7 +70,7 @@ aside{
 
 .sidebar-top{
     height: calc(100% - 80px);
-    min-height: 450px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
 
@@ -143,7 +143,7 @@ aside{
 }
 
 .playlist{
-    min-height: 80px;
+    min-height: 30px;
     overflow-y: auto;
 }
 
